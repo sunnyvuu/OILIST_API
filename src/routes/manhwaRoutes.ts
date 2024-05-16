@@ -5,7 +5,10 @@ const router = Router();
 const manhwaController = new ManhwaController();
 
 router.get("/manhwas", (req, res) => {
-  console.log("Accessing /manhwas route");
+  manhwaController.listManhwas(req, res);
+});
+
+router.get("/updateManhwas", (req, res) => {
   manhwaController.processAndSaveManhwa(req, res);
 });
 

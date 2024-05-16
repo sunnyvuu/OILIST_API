@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { TropeModel } from "../models/tropeModel.js";
-import { pool } from "../config/dbConfig.js";
 import { Trope } from "../types/tropes.js";
 
 export class TropeController {

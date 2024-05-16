@@ -1,6 +1,5 @@
 import { pool } from "../config/dbConfig.js";
 import { Trope } from "../types/tropes.js";
-import { response } from "express";
 
 export class TropeModel {
   async getTropes(): Promise<Trope[]> {
